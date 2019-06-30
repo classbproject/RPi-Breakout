@@ -2,7 +2,7 @@
 
 This repository contains scripts to test the RPi breakout board.
 
-Available peripherals are:
+Available peripherals:
 
 1. 1 x MCP7940N RTC with battery backup
 2. 1 x Pi HAT EEPROM
@@ -17,6 +17,8 @@ Available peripherals are:
 11. 9 x GPIO
 
 ## Pin map
+
+Shown below is the pin map.
 
 | GPIO # | Alternate Fn                       | 40 pin HDR Physical pin | Comments                        |
 |--------|------------------------------------|-------------------------|---------------------------------|
