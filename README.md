@@ -1,6 +1,22 @@
-# RPi-Breakout
+# RPi breakout board
 
-This repository contains scripts to test the RPi breakout board. Listed here is the pin map.
+This repository contains scripts to test the RPi breakout board.
+
+Available peripherals are:
+
+1. 1 x MCP7940N RTC with battery backup
+2. 1 x Pi HAT EEPROM
+3. 1 x RGB LED
+4. 1 x I2C
+5. 1 x SPI
+6. 1 x Opto-isolated MOSFET output
+7. 1 x UART (TXD and RXD)
+8. 1 x 5V output
+9. 3 x noise protected button inputs
+10. 2 x PWM outputs
+11. 9 x GPIO
+
+## Pin map
 
 | GPIO # | Alternate Fn                       | 40 pin HDR Physical pin | Comments                        |
 |--------|------------------------------------|-------------------------|---------------------------------|
