@@ -19,6 +19,7 @@ time.sleep(1)
 print "MOSFET off"
 GPIO.output(mosfet,GPIO.LOW)
 
+print ""
 print "Finished testing MOSFET!"
 print ""
 

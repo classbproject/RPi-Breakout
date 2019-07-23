@@ -10,5 +10,6 @@ print ""
 
 subprocess.call(["hwclock", "--debug"])
 
+print ""
 print "Finished testing RTC!"
 print ""

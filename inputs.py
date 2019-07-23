@@ -34,46 +34,55 @@ while GPIO.input(in4) == False:
 	time.sleep(0.1)
 print "Input on GPIO 4 detected"
 
+print ""
 print "Waiting for input on GPIO14"
 while GPIO.input(in14) == False:
 	time.sleep(0.1)
 print "Input on GPIO 14 detected"
 
+print ""
 print "Waiting for input on GPIO15"
 while GPIO.input(in15) == False:
 	time.sleep(0.1)
 print "Input on GPIO 15 detected"
 
+print ""
 print "Waiting for input on GPIO7"
 while GPIO.input(in7) == False:
 	time.sleep(0.1)
 print "Input on GPIO 7 detected"
 
+print ""
 print "Waiting for input on GPIO21"
 while GPIO.input(in21) == False:
 	time.sleep(0.1)
 print "Input on GPIO 21 detected"
 
+print ""
 print "Waiting for input on GPIO20"
 while GPIO.input(in20) == False:
 	time.sleep(0.1)
 print "Input on GPIO 20 detected"
 
+print ""
 print "Waiting for input on GPIO19"
 while GPIO.input(in19) == False:
 	time.sleep(0.1)
 print "Input on GPIO 19 detected"
 
+print ""
 print "Waiting for input on GPIO13"
 while GPIO.input(in13) == False:
 	time.sleep(0.1)
 print "Input on GPIO 13 detected"
 
+print ""
 print "Waiting for input on GPIO12"
 while GPIO.input(in12) == False:
 	time.sleep(0.1)
 print "Input on GPIO 12 detected"
 
+print ""
 print "Finished testing inputs!"
 print ""
 

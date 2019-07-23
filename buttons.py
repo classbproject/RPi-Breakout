@@ -23,18 +23,21 @@ while GPIO.input(button1) == False:
 
 print "Button 1 pressed!"
 
+print ""
 print "Waiting for button 2 press..."
 while GPIO.input(button2) == False:
     time.sleep(0.1)
 
 print "Button 2 pressed!"
 
+print ""
 print "Waiting for button 3 press..."
 while GPIO.input(button3) == False:
     time.sleep(0.1)
 
 print "Button 3 pressed!"
 
+print ""
 print "Finished testing buttons!"
 print ""
 

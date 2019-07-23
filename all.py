@@ -63,6 +63,7 @@ time.sleep(0.5)
 print "Blue LED off"
 GPIO.output(blue,GPIO.LOW)
 
+print ""
 print "Finished testing LEDs!"
 print ""
 
@@ -75,14 +76,17 @@ time.sleep(1)
 print "MOSFET off"
 GPIO.output(mosfet,GPIO.LOW)
 
+print ""
 print "Finished testing MOSFET!"
 print ""
 
 print "*~*~* Start testing RTC *~*~*"
 print ""
 
-subprocess.call(["hwclock", "--debug"])
+subprocess.call(["sudo", "hwclock", "--systohc"])
+subprocess.call(["sudo", "hwclock", "--debug"])
 
+print ""
 print "Finished testing RTC!"
 print ""
 
@@ -95,18 +99,21 @@ while GPIO.input(button1) == False:
 
 print "Button 1 pressed!"
 
+print ""
 print "Waiting for button 2 press..."
 while GPIO.input(button2) == False:
     time.sleep(0.1)
 
 print "Button 2 pressed!"
 
+print ""
 print "Waiting for button 3 press..."
 while GPIO.input(button3) == False:
     time.sleep(0.1)
 
 print "Button 3 pressed!"
 
+print ""
 print "Finished testing buttons!"
 print ""
 
@@ -114,51 +121,62 @@ print "*~*~* Start testing GPIO inputs *~*~*"
 print ""
 
 print "Waiting for input on GPIO4"
-while (GPIO.input(in4) == False)
+while (GPIO.input(in4) == False):
 	time.sleep(0.1)
 print "Input on GPIO 4 detected"
 
+print ""
 print "Waiting for input on GPIO14"
-while (GPIO.input(in14) == False)
+while (GPIO.input(in14) == False):
 	time.sleep(0.1)
 print "Input on GPIO 14 detected"
 
+print ""
 print "Waiting for input on GPIO15"
-while (GPIO.input(in15) == False)
+while (GPIO.input(in15) == False):
 	time.sleep(0.1)
 print "Input on GPIO 15 detected"
 
+print ""
 print "Waiting for input on GPIO7"
-while (GPIO.input(in7) == False)
+while (GPIO.input(in7) == False):
 	time.sleep(0.1)
 print "Input on GPIO 7 detected"
 
+print ""
 print "Waiting for input on GPIO21"
-while (GPIO.input(in21) == False)
+while (GPIO.input(in21) == False):
 	time.sleep(0.1)
 print "Input on GPIO 21 detected"
 
+print ""
 print "Waiting for input on GPIO20"
-while (GPIO.input(in20) == False)
+while (GPIO.input(in20) == False):
 	time.sleep(0.1)
 print "Input on GPIO 20 detected"
 
+print ""
 print "Waiting for input on GPIO19"
-while (GPIO.input(in19) == False)
+while (GPIO.input(in19) == False):
 	time.sleep(0.1)
 print "Input on GPIO 19 detected"
 
+print ""
 print "Waiting for input on GPIO13"
-while (GPIO.input(in13) == False)
+while (GPIO.input(in13) == False):
 	time.sleep(0.1)
 print "Input on GPIO 13 detected"
 
+print ""
 print "Waiting for input on GPIO12"
-while (GPIO.input(in12) == False)
+while (GPIO.input(in12) == False):
 	time.sleep(0.1)
 print "Input on GPIO 12 detected"
 
+print ""
 print "Finished testing inputs!"
+print ""
+print "Exiting... goodbye!"
 print ""
 
 GPIO.cleanup()
