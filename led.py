@@ -6,9 +6,9 @@ import RPi.GPIO as GPIO
 GPIO.setmode (GPIO.BCM) #BCM uses the GPIO numbers while BOARD uses the actual pin number
 GPIO.setwarnings (False)
 
-red = 11
+red = 10
 green = 9
-blue = 10
+blue = 11
 
 GPIO.setup(red,GPIO.OUT)
 GPIO.setup(green,GPIO.OUT)
