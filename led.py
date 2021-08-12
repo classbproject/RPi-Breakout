@@ -19,7 +19,6 @@ print ""
 
 print "Green LED on"
 GPIO.output(green,GPIO.HIGH)
-<<<<<<< HEAD
 time.sleep(0.5)
 print "Green LED off"
 =======
@@ -30,7 +29,6 @@ GPIO.output(green,GPIO.LOW)
 print ""
 print "Red LED on"
 GPIO.output(red,GPIO.HIGH)
-<<<<<<< HEAD
 time.sleep(0.5)
 print "Red LED off"
 =======
@@ -41,7 +39,6 @@ GPIO.output(red,GPIO.LOW)
 print ""
 print "Blue LED on"
 GPIO.output(blue,GPIO.HIGH)
-<<<<<<< HEAD
 time.sleep(0.5)
 print "Blue LED off"
 =======
