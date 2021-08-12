@@ -7,9 +7,9 @@ import RPi.GPIO as GPIO
 GPIO.setmode (GPIO.BCM) #BCM uses the GPIO numbers while BOARD uses the actual pin number
 GPIO.setwarnings (False)
 
-red = 11
+red = 10
 green = 9
-blue = 10
+blue = 11
 mosfet = 22
 button1 = 17
 button2 = 18
