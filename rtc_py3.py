@@ -8,7 +8,7 @@ import subprocess
 print("*~*~* Start testing RTC *~*~*")
 print("")
 
-subprocess.call(["hwclock", "--debug"])
+subprocess.call(["sudo", "hwclock", "--debug"])
 
 print("")
 print("Finished testing RTC!")

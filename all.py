@@ -47,19 +47,19 @@ print ""
 
 print "Green LED on"
 GPIO.output(green,GPIO.HIGH)
-time.sleep(0.5)
+time.sleep(2)
 print "Green LED off"
 GPIO.output(green,GPIO.LOW)
 
 print "Red LED on"
 GPIO.output(red,GPIO.HIGH)
-time.sleep(0.5)
+time.sleep(2)
 print "Red LED off"
 GPIO.output(red,GPIO.LOW)
 
 print "Blue LED on"
 GPIO.output(blue,GPIO.HIGH)
-time.sleep(0.5)
+time.sleep(2)
 print "Blue LED off"
 GPIO.output(blue,GPIO.LOW)
 
@@ -72,7 +72,7 @@ print ""
 
 print "MOSFET on"
 GPIO.output(mosfet,GPIO.HIGH)
-time.sleep(1)
+time.sleep(2)
 print "MOSFET off"
 GPIO.output(mosfet,GPIO.LOW)
 
@@ -84,7 +84,7 @@ print "*~*~* Start testing RTC *~*~*"
 print ""
 
 subprocess.call(["sudo", "hwclock", "--systohc"])
-subprocess.call(["sudo", "hwclock", "--debug"])
+subprocess.call(["sudo", "hwclock", "--verbose", "-r"])
 
 print ""
 print "Finished testing RTC!"

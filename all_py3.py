@@ -32,7 +32,7 @@ GPIO.setup(button3, GPIO.IN, pull_up_down=GPIO.PUD_DOWN)
 
 print ("*~*~* Start testing LEDs *~*~*\n")
 
-SLEEP_TIME = 0.5
+SLEEP_TIME = 2
 
 print ("Green LED on\n")
 GPIO.output(green,GPIO.HIGH)
@@ -117,6 +117,7 @@ print ("\n")
 #I2C testing code
 #SCL = 5
 #SDA = 3
+# TO BE RUN ONLY WHEN YOU HAVE AN I2C DHT22 CONNECTED ON THE I2C LINES!
 
 DEVICE = 0x5C #device I2C address
 bus = smbus.SMBus(1)
@@ -141,7 +142,7 @@ readdata()
 print ("*~*~* Start testing RTC *~*~*\n")
 # print ("")
 subprocess.call(["sudo", "hwclock", "--systohc"])
-subprocess.call(["hwclock", "--debug"])
+subprocess.call(["sudo", "hwclock", "-r", "--verbose"])
 
 print ("\n")
 print ("Finished testing RTC!\n")

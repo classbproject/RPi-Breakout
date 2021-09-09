@@ -15,7 +15,7 @@ print ""
 
 print "MOSFET on"
 GPIO.output(mosfet,GPIO.HIGH)
-time.sleep(1)
+time.sleep(2)
 print "MOSFET off"
 GPIO.output(mosfet,GPIO.LOW)
 
